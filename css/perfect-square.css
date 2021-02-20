@@ -1,0 +1,33 @@
+/*
+    square component:
+    - square-container: makes square inside horizontally and vertically
+    - square: follows Bobby Kilpartick's solution at https://spin.atomicobject.com/2015/07/14/css-responsive-square/
+    - square-inner: the HTMl element to make the composition.
+*/
+.square-container{
+    --square-size: 90%;
+    --a-color: rgb(69, 69, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--square-size);
+    transform: translate(-50%, -50%);
+}
+
+.square-container>.square{
+    background-color: var(--a-color);
+    margin: auto;
+    position: relative;
+    width: var(--square-size);
+    border: 2px dotted black;
+}
+.square-container>.square:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.square-container>.square>.square-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
