@@ -9,15 +9,6 @@ body{
 *,::before,::after{
     box-sizing: border-box;
 }
-.layout{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--grey-default);
-}
-.layout *{
-    border: 2px dotted black;
-}
 /*
     square component:
     - square-container: makes square inside horizontally and vertically
@@ -37,6 +28,7 @@ body{
     margin: auto;
     position: relative;
     width: var(--square-size);
+    border: 2px dotted black;
 }
 .square-container>.square:after{
     content: "";
