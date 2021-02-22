@@ -5,9 +5,11 @@ export class PerfectSquare{
         console.log('Perfect Square constructor', this.__square);
     }
     applyHorizontal(){
-        console.log('applyHorizontal');
+        this.__square.classList.remove('square-vertical')
+        this.__square.classList.add('square-horizontal');
     }
     applyVertical(){
-        console.log('applyVertical');
+        this.__square.classList.remove('square-horizontal');
+        this.__square.classList.add('square-vertical');
     }
 }

@@ -7,6 +7,8 @@
 .square-container{
     --square-size: 90%;
     --a-color: rgb(69, 69, 255);
+    --v-color:rgba(69,255,69,.3);
+    --h-color:rgba(255,69,69,.3);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,7 +17,7 @@
 }
 
 .square-container>.square{
-    background-color: var(--a-color);
+    /*background-color: var(--a-color);*/
     margin: auto;
     position: relative;
     width: var(--square-size);
@@ -30,4 +32,16 @@
     position: absolute;
     width: 100%;
     height: 100%;
+}
+.square-horizontal{
+    background-color: var(--h-color);
+    height: 100vh;
+    /*width is the same as height*/
+    width: 100vh;
+}
+.square-vertical{
+    background-color: var(--v-color);
+    width: 100vw;
+    /*height is the same as width*/
+    height: 100vw;
 }
