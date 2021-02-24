@@ -5,9 +5,9 @@ function applySquare(){
     const h = document.body.clientHeight;
     console.log(w,h);
     if(h >= w){
-        perfectSquare.applyVertical();
+        perfectSquare.applyVertical(w,h);
     }else{
-        perfectSquare.applyHorizontal();
+        perfectSquare.applyHorizontal(w,h);
     }
 }
 window.addEventListener('resize',()=>{
