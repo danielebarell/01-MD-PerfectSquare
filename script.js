@@ -3,7 +3,6 @@ const perfectSquare = new PerfectSquare(document.querySelector('#shape-container
 function applySquare(){
     const w = document.body.clientWidth;
     const h = document.body.clientHeight;
-    console.log(w,h);
     if(h >= w){
         perfectSquare.applyVertical(w,h);
     }else{
@@ -11,5 +10,9 @@ function applySquare(){
     }
 }
 window.addEventListener('resize',()=>{
+    applySquare()
+});
+/*set square just at start*/
+window.addEventListener('load',()=>{
     applySquare()
 })
