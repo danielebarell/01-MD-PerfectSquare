@@ -13,7 +13,7 @@ export class PerfectSquare{
      * @param {HTMLElement} target - the element to be squared
      * @param {number} margin - a positive integer to set the margin around the square, default value: 20
      * */
-    constructor(target, margin = 20){
+    constructor(target, margin = 120){
         this.__square = target;
         this.__margin = margin;
         console.log('Perfect Square constructor', this.__square, this.__margin);
@@ -31,7 +31,7 @@ export class PerfectSquare{
         //Horizontally the square size depends on height
         const size = outerHeight - (this.__margin * 2);
         const top = this.__margin;
-        const left = (outerWidth - size)/2 + this.__margin;
+        const left = (outerWidth - size)/2;
         //set the style attribute, use short object syntax
         this.style = {
             size,
@@ -51,7 +51,7 @@ export class PerfectSquare{
         //Vertically the square size depends on width
         const size = outerWidth - (this.__margin * 2);
         const left = this.__margin;
-        const top = (outerHeight - size)/2 + this.__margin;
+        const top = (outerHeight - size)/2;
         //set the style attribute, use short object syntax
         this.style = {
             size,
