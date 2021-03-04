@@ -16,7 +16,7 @@ export class PerfectSquare{
         const width = size;
         const height = size;
         const top = this.__margin;
-        const left = (outerWidth - size)/2 + this.__margin;
+        const left = (outerWidth - size)/2;
         //set the style attribute
         this.__square.style = `width: ${width}px; height: ${height}px; left: ${left}px; top: ${top}px;`;
     }
@@ -28,7 +28,7 @@ export class PerfectSquare{
         const width = size;
         const height = size;
         const left = this.__margin;
-        const top = (outerHeight - size)/2 + this.__margin;
+        const top = (outerHeight - size)/2;
         //set the style attribute
         this.__square.style = `width: ${width}px; height: ${height}px; left: ${left}px; top: ${top}px;`;
     }
