@@ -6,7 +6,7 @@ export class PerfectSquare{
     //the HTML element reference
     __square
     //margin around the square
-    __margin = 25;
+    __margin = 0;
     /**
      * PerfectSquare
      * @constructor
