@@ -2,7 +2,7 @@ export class PerfectSquare{
     //the HTML element reference
     __square
     //margin around the square
-    __margin = 25;
+    __margin = 0;
     constructor(target, margin = 20){
         this.__square = target;
         this.__margin = margin;
